@@ -1,18 +1,6 @@
-const express = require("express");
-
-const app = express();
+const app = require("./app");
 
 const PORT = 3000;
-
-// Main route
-app.get("/", (req, res) => {
-    res.send("Hello Vaibhav! Welcome to DevOps Project 2.");
-});
-
-// Health check route
-app.get("/health", (req, res) => {
-    res.send("Application is healthy.");
-});
 
 // Start server
 app.listen(PORT, () => {
