@@ -4,7 +4,7 @@ const app = express();
 
 // Main route
 app.get("/", (req, res) => {
-    res.send("Hello Vaibhav! Welcome to DevOps Project 2.");
+    res.send("Hello Vaibhav! CI/CD Pipeline test Welcome to DevOps Project 2.");
 });
 
 // Health check route
