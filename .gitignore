@@ -5,5 +5,10 @@ node_modules/
 
 #Terraform download files
 .terraform/
+
+#Terrafor state file
 *.tfstate
-*.tfstate.*terraform/secret-test.yaml
+*.tfstate.*
+
+#Terraform test secrets
+terraform/secret-test.yaml

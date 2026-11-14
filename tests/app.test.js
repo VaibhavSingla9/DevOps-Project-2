@@ -1,3 +1,4 @@
+
 const request = require("supertest");
 const app = require("../app");
 
@@ -17,6 +18,13 @@ describe("Application API Tests", () => {
 
         expect(response.statusCode).toBe(200);
         expect(response.text).toBe("Application is healthy.");
+    });
+
+    test("GET /metrics should return Prometheus metrics", async () => {
+        const response = await request(app).get("/metrics");
+
+        expect(response.statusCode).toBe(200);
+        expect(response.text).toContain("process_resident_memory_bytes");
     });
 
 });
