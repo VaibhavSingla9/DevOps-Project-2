@@ -8,7 +8,7 @@ describe("Application API Tests", () => {
 
         expect(response.statusCode).toBe(200);
         expect(response.text).toBe(
-            "Hello Vaibhav! Welcome to DevOps Project 2."
+            "Hello Vaibhav! CI/CD Pipeline test Welcome to DevOps Project 2."
         );
     });
 
